@@ -18,10 +18,10 @@ kandipa kadaikum = > {referal, level,} depents on atchivements => {club, rank in
 
 
 
-[] content AI = Impressive ,add two lines
+[x] content AI = Impressive ,add two lines
 
 [x] menu bar color need to correct 
 
-[] padding and spacing
+[x] padding and spacing
 
-[] image
+[x] image
