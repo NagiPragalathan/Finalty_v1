@@ -25,3 +25,21 @@ kandipa kadaikum = > {referal, level,} depents on atchivements => {club, rank in
 [x] padding and spacing
 
 [x] image
+
+
+
+logo = 220
+name = 80
+
+home about keypeoples need to increatse
+fin = caps red, a = small : need to change into tow
+menu need to be fixed = the size of font need to increase
+need to make space in the about
+
+vision and mision 
+
+need to remove 7th point
+
+merege the content both are into single paragraph
+
+content us need to be change
