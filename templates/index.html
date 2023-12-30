@@ -101,20 +101,23 @@
                 <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0" style="margin-left: -15%;">
                     <li>
                         <a href="#home" id="home_"
-                            class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
+                            class="block py-2 pl-3 pr-4 text-white orange rounded lg:bg-transparent lg:p-0 dark:text-white" style="color:rgb(252, 76, 1)"
                             aria-current="page">Home</a>
                     </li>
                     <li>
                         <a href="#about"
-                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" id="about_">About</a>
+                            class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" 
+                            id="about_">About</a>
                     </li>
                     <li>
                         <a href="#peoples"
-                        class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" id="peoples_">Key Peoples</a>
+                        class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                         id="peoples_">Key Peoples</a>
                     </li>
                     <li>
-                        <a href="#contact"
-                        class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700" id="Contact_">Contact</a>
+                        <a href="#contact_us"
+                        class="block py-2 pl-3 pr-4 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                         id="Contact_">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -130,7 +133,7 @@
                     {% comment %} <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-4 animated bounceInDown">Welcome to <span class="com_name">Finalty</span></small> {% endcomment %}
                     <h1 class="display-5 mb-8 lg:text-5xl text-2xl sm:text-3xl sm:text-2xl" style="color:black">Welcome to <span class="com_name" >Finalty</span> - A Comprehensive Guide to Smart Tenant-Landlord Solutions</h1>
                     <p class="text-xl font-light mb-4 " id="para_hero">Step into the world of <span class="com_name">Finalty</span>, your comprehensive guide to intelligent solutions for both tenants and landlords. Navigate the future of seamless property management with us!</p>
-                    <a href="#about" class="inline-block align-middle mt-7 text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline orange_background text-white hover:orange_background border-0 rounded-full py-2 px-4 py-3 px-4 md:px-12 animated bounceInLeft">Know More</a>
+                    <a href="#contact_us" class="inline-block align-middle mt-7 text-center select-none border font-normal whitespace-no-wrap rounded py-1 px-3 leading-normal no-underline orange_background text-white hover:orange_background border-0 rounded-full py-2 px-4 py-3 px-4 md:px-12 animated bounceInLeft">Know More</a>
                 </div>
                 <div class="lg:w-2/5 pr-4 pl-4 md:w-full pr-4 pl-4">
                     <img style="width:100%" src="https://cdni.iconscout.com/illustration/premium/thumb/real-estate-3727515-3135817.png?f=webp" class="max-w-full h-auto rounded animated lightSpeedIn" alt="">
@@ -772,6 +775,7 @@
                         <div class="sm:w-1/2 pr-4 pl-4 font-bold" id="points">
                             <i class="fas fa-paper-plane orange_color me-2" id="icon_arrow" ></i>Personal Challenge, Global Solution
                         </div>
+                        <div id="peoples"></div>
                         <div class="sm:w-1/2 pr-4 pl-4 font-bold" id="points">
                             <i class="fas fa-paper-plane orange_color me-2" id="icon_arrow" ></i>Seamless Rent Payments
                         </div>
@@ -782,6 +786,7 @@
             </div>
         </div>
     </div>
+
     <!-- About End -->
 
     {% comment %} <!-- Service Start -->
@@ -871,7 +876,7 @@
     <!-- End of gallery--> {% endcomment %}
 
     <!-- Menu Start -->
-    <div class="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 menu bg-gray-100 pt-10 pd-1 my-6">
+    <!-- <div class="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 menu bg-gray-100 pt-10 pd-1 my-6">
         <div class="container mx-auto sm:px-4">
             <div class="text-center wow bounceInDown" data-wow-delay="0.1s">
                 {% comment %} <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Values</small> {% endcomment %}
@@ -951,11 +956,11 @@
                     </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Menu End -->
     <!-- component -->
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css" >
 <!-- MDI Icons -->
-<link rel="stylesheet" href="https://cdn.materialdesignicons.com/6.5.95/css/materialdesignicons.min.css" >
 
 <!-- Page Container -->
 <div class="flex items-center justify-center  bg-white shadow-md  transition duration-300 rounded-lg">
@@ -1217,7 +1222,7 @@ Created by Surjith S M
 for: https://web3templates.com
 -->
 
-<div class="relative overflow-hidden">
+<div class="relative overflow-hidden" id="contact_us">
     <!-- component contact us -->
     <div class="relative flex items-top justify-center p-6 shadow-sm rounded-md transition duration-20 orange_background dark:bg-gray-900 sm:items-center sm:pt-0">
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8" data-wow-delay="0.5s">
@@ -1312,7 +1317,7 @@ for: https://web3templates.com
                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#about">about us</a>
               </li>
               <li>
-                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#contact">contact us</a>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#kwjhsn">contact us</a>
               </li>
               <li>
                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="#peoples">key peoples</a>
@@ -1363,30 +1368,30 @@ for: https://web3templates.com
             var scrollPosition = window.scrollY;
     
             // You can adjust these values based on when you want the color to change
-            if (scrollPosition > 480.79998779296875 && scrollPosition < 7501.60009765625) {
+            if (scrollPosition > 480.79998779296875 && scrollPosition < 11000.599609375) {
                 console.log("about")
-                About.style.color = "#6d28d9"
+                About.style.color = "#FC4C01"
                 Home.style.color = "black"
                 Contact.style.color = "black"
                 Peoples.style.color = "black"
             }
-            else if (scrollPosition > 8623.2001953125 && scrollPosition < 9439.2001953125) {
+            else if (scrollPosition > 11000.599609375 && scrollPosition < 11423.111328125) {
                 console.log("Key Peoples")
                 About.style.color = "black"
                 Home.style.color = "black"
                 Contact.style.color = "black"
-                Peoples.style.color = "#6d28d9" 
+                Peoples.style.color = "#FC4C01" 
             }
-            else if (scrollPosition > 10673.599609375) {
+            else if (scrollPosition > 11423.111328125) {
                 console.log("Contact")
                 About.style.color = "black"
                 Home.style.color = "black"
-                Contact.style.color = "#6d28d9"
+                Contact.style.color = "#FC4C01"
                 Peoples.style.color = "black"
             }else if (scrollPosition > 0 && scrollPosition < 480.79998779296875){
                 console.log("home")
                 About.style.color = "black"
-                Home.style.color = "#6d28d9"
+                Home.style.color = "#FC4C01"
                 Contact.style.color = "black"
                 Peoples.style.color = "black"
             }
