@@ -43,3 +43,8 @@ need to remove 7th point
 merege the content both are into single paragraph
 
 content us need to be change
+intro to the go into home page
+
+
+
+https://tailwindcomponents.com/component/responsive-facebook-login-form
