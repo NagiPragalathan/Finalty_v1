@@ -48,7 +48,7 @@
             color:#FC4C01
         }
         .orange_border{
-            border-bottom: 2px solid #FC4C01
+            border: 2px solid #FC4C01
         }
         .orange_background{
             background-color:#FC4C01;
@@ -82,23 +82,8 @@
                 <img src="https://finalty.in/static/images/logo1.png" style="height:80px; margin-right:-15px" class="h-6 mr-3 sm:h-9" alt="Landwind Logo">
                 <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white com_name">Finalty</span>
             </a>
-            <button data-collapse-toggle="mobile-menu-2" type="button"
-            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="mobile-menu-2" aria-expanded="true">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
-            </svg>
-            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-            </svg>
-        </button>
             <div class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1 hidden" id="mobile-menu-2">
-                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0" style="margin-left: -15%;">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                     <li>
                         <a href="#home" id="home_"
                             class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded lg:bg-transparent lg:text-purple-700 lg:p-0 dark:text-white"
@@ -142,36 +127,6 @@
     <!-- Hero End -->
     <hr>
 
-    <div class="bg-white pt-10 pb-14 sm:pt-16 lg:overflow-hidden lg:pt-24 lg:pb-24">
-        <div class="mx-auto max-w-5xl lg:px-8">
-          <div class="lg:grid lg:grid-cols-2 lg:gap-8">
-            <div class="mx-auto max-w-md px-4 text-center sm:max-w-2xl sm:px-6 lg:flex lg:items-center lg:px-0 lg:text-left">
-              <div class="lg:py-24">
-                <h1 class="mt-4 text-4xl font-bold tracking-tight text-black sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"><span class="block text-pink-500">Introducing </span><span class="block text-black">Finalty Website</span></h1>
-                <p class="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">We're excited to announce that something amazing is in the works. Our team is diligently working on bringing you a fantastic experience. Stay tuned for updates!</p>
-                <div class="mt-10 sm:mt-12">
-    
-                    <!-- This is a working waitlist form. Create your access key from https://web3forms.com/s to setup.  -->
-                  <form class="sm:mx-auto sm:max-w-xl lg:mx-0" action="https://api.web3forms.com/submit">
-                    <div class="sm:flex">
-                      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEy_HERE">
-                      <input type="hidden" name="subject" value="New Waitlist">
-                      <div class="min-w-0 flex-1">
-                          {% comment %} <label for="email" class="sr-only">Email address</label><input id="email" type="email" placeholder="Enter your email" class="block w-full rounded-md border-0 bg-gray-200 px-4 py-3 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400" value="" autocomplete="off" /> {% endcomment %}
-                      </div>
-                      <div class="mt-3 sm:mt-0 sm:ml-3" id="contact">
-                          {% comment %} <button type="submit" class="block w-full rounded-md bg-pink-500 py-3 px-4 font-medium text-white shadow hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-gray-900">Join Waitlist</button> {% endcomment %}
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="mt-12 hidden lg:block"><img class="" src="https://cdni.iconscout.com/illustration/premium/thumb/real-estate-agency-3142089-2621418.png" alt="" /></div>
-          </div>
-        </div>
-      </div>
-
 
     <!-- About Satrt -->
     <div class="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 py-5 mt-8 lg:mt-10">
@@ -181,7 +136,7 @@
                     <img src="https://media.licdn.com/dms/image/D4E12AQEOr0LTZEAH9w/article-cover_image-shrink_720_1280/0/1684331292817?e=2147483647&v=beta&t=_ALqnvf-b19VMrFBx8OtsAI06Be8B4Ps59IjdtH1bkE" class="max-w-full h-auto rounded" alt="">
                 </div>
                 <div class="lg:w-3/5 pr-4 pl-4 wow bounceInRight" style="padding-right: ;" data-wow-delay="0.3s">
-                    <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;"> Seamless Communication</small>
+                    <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3"> Seamless Communication</small>
                     <h1 class="display-5 mb-4">Revolutionizing Tenant-Landlord Interactions</h1>
                     <p class="mb-4">Unlock a groundbreaking feature within our app designed to foster direct and transparent communication between tenants and landlords. Imagine a seamless process where tenants and landlords can connect instantly, facilitating clear transactions and streamlining the search for the perfect match.</p>
                     <div class="flex flex-wrap g-4 text-gray-900 mb-5 g-10px mb- mr-4">
@@ -214,7 +169,7 @@
                     <img src="https://cdni.iconscout.com/illustration/premium/thumb/payment-processing-9773386-7973909.png?f=webp" class="max-w-full h-auto rounded" alt="">
                 </div>
                 <div class="lg:w-3/5 pr-4 pl-4 wow bounceInLeft" style="padding-right: ;" data-wow-delay="0.3s">
-                    <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Hassle-Free Payment Process</small>
+                    <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Hassle-Free Payment Process</small>
                     <h1 class="display-5 mb-4">Automatic Rent Payments</h1>
                     <p class="mb-4"> Bid farewell to the hassle of remembering rent deadlines. Our app
                         ensures a seamless payment process by automatically transferring the respective
@@ -252,7 +207,7 @@
                     <img src="https://cdni.iconscout.com/illustration/premium/thumb/judicial-penalty-9522747-7740759.png?f=webp" class="max-w-full h-auto rounded" alt="">
                 </div>
                 <div class="lg:w-3/5 pr-4 pl-4 wow bounceInRight" style="padding-right:;" data-wow-delay="0.3s">
-                    <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Intervention and Penalties</small>
+                    <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Intervention and Penalties</small>
                     <h1 class="display-5 mb-4">Elevating Financial Responsibility with Our Safety Net</h1>
                     <p class="mb-4">In a commitment to our users' financial well-being, our company takes proactive steps to safeguard against missed payments. Imagine a world where missed rent payments don't lead to stress and uncertainty.</p>
                     <p class="mb-4">Our innovative approach involves stepping in to cover the rent on behalf of the tenant, providing a robust safety net that ensures continuous peace of mind. As a testament to fostering financial responsibility, a nominal fee accompanies delayed payments, instilling a sense of accountability within our vibrant community.</p>
@@ -285,7 +240,7 @@
                     <img src="https://cdni.iconscout.com/illustration/premium/thumb/protection-of-property-interests-7718371-6253674.png?f=webp" class="max-w-full h-auto rounded" alt="">
                 </div>
                 <div class="lg:w-3/5 pr-4 pl-4 wow bounceInLeft" style="padding-right:;" data-wow-delay="0.3s">
-                    <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Damage Reporting and Legal Action</small>
+                    <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Damage Reporting and Legal Action</small>
                     <h1 class="display-5 mb-4">Fortifying Property Interests with Vigilance</h1>
                     <p class="mb-4">Our commitment to safeguarding property interests goes beyond conventional property management. In the unfortunate event of tenant-caused damage, our company stands as your vigilant guardian. Landlords can seamlessly request our intervention, unleashing a powerful shield against property threats.</p>
                     <p class="mb-4">We take pride in offering a swift and effective solution. Our dedicated team is ready to take legal action and, if necessary, initiate a formal complaint process with local law enforcement. The power lies in the hands of the landlord, ensuring a fair and balanced approach to issue resolution.</p>
@@ -318,7 +273,7 @@
                     <img src="https://static.vecteezy.com/system/resources/thumbnails/019/522/844/small_2x/benchmarking-concept-set-idea-of-business-development-and-improvement-compare-quality-with-competitor-companies-free-vector.jpg" class="max-w-full h-auto rounded" alt="">
                 </div>
                 <div class="lg:w-3/5 pr-4 pl-4 wow bounceInRight" style="padding-right:;" data-wow-delay="0.3s">
-                    <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Financial History Transparency</small>
+                    <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Financial History Transparency</small>
                     <h1 class="display-5 mb-4">Elevate Your Property Management Experience</h1>
                     <p class="mb-4">Welcome to a new era of property management, where financial accountability meets technological innovation. Our app empowers landlords with an unparalleled level of transparency into a tenant's financial history, going beyond the conventional rental experience.</p>
                     <p class="mb-4">Imagine having real-time access to comprehensive records, including water tax, current bills, and detailed payment history. This groundbreaking feature enables landlords to make informed decisions, ensuring the selection of trustworthy and responsible tenants who align with your property's values.</p>
@@ -350,7 +305,7 @@
                 <img style="height: 256px;" src="data:image/png;base64,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" class="max-w-full h-auto rounded" alt="">
             </div>
             <div class="lg:w-3/5 pr-4 pl-4 wow bounceInLeft" style="padding-right:;" data-wow-delay="0.3s">
-                <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Tenant Behaviour Profile</small>
+                <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Tenant Behaviour Profile</small>
                 <h1 class="display-5 mb-4">Empowering Informed Decision-Making</h1>
                 <p class="mb-4">Unlock the power of comprehensive tenant insights with our Tenant Behaviour Profile. It goes beyond the conventional approach, delving into tenant behavior, rent payment history, and current bill payment records. This detailed profile within the app enables informed decision-making for both tenants and landlords.</p>
                 <div class="flex flex-wrap g-4 text-gray-900 mb-5">
@@ -381,7 +336,7 @@
                     <img style="height:253px" src="data:image/png;base64,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" class="max-w-full h-auto rounded" alt="">
                 </div>
                 <div class="lg:w-3/5 pr-4 pl-4 wow bounceInRight" style="padding-right: ;" data-wow-delay="0.3s">
-                    <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Exclusive Offer: Free Usage for Tenants</small>
+                    <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Exclusive Offer: Free Usage for Tenants</small>
                     <h1 class="display-5 mb-4">Empowering Tenants with Unmatched Benefits</h1>
                     <p class="mb-4">Embark on a revolutionary tenant experience where access to premium features comes at no cost. Our commitment to fairness ensures that tenants can explore the app's extensive benefits without incurring any direct expenses. The platform's unparalleled accessibility and user-friendly design foster a seamless tenant-landlord relationship, elevating your renting experience to new heights.</p>
                     <div class="flex flex-wrap  g-4 text-gray-900 mb-5">
@@ -446,7 +401,7 @@
                     <img src="https://img.freepik.com/premium-vector/qualified-real-estate-agent-concept-realtor-assistance-help-mortgage-contract-real-estate-vector_566886-1658.jpg" class="max-w-full h-auto rounded" alt="Qualified Real Estate Agent">
                 </div>
                 <div class="lg:w-3/5 pr-4 pl-4 wow bounceInRight" style="padding-right: ;" data-wow-delay="0.3s">
-                    <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Expert Property Maintenance Assistance</small>
+                    <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Expert Property Maintenance Assistance</small>
                     <h1 class="display-5 mb-4">Elevate Your Property Management Experience</h1>
                     <p class="mb-4">Owning a substantial property portfolio, especially when residing abroad, can be challenging. Our company offers comprehensive property management services to relieve you of these burdens. Ensure your properties are not just well-maintained but secure, providing you the ultimate peace of mind.</p>
                     <div class="flex flex-wrap g-4 text-gray-900 mb-5">
@@ -788,7 +743,7 @@
     <div class="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 service py-6">
         <div class="container mx-auto sm:px-4">
             <div class="text-center wow bounceInDown" data-wow-delay="0.1s">
-                <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Our Services</small>
+                <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Our Services</small>
                 <h1 class="display-5 mb-5">What We Offer</h1>
             </div>
             <div class="flex flex-wrap  g-4">
@@ -842,7 +797,7 @@
     </div> {% endcomment %}
     <!-- Service End -->
     {% comment %} <div class="text-center wow bounceInDown" data-wow-delay="0.1s">
-        <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Our Gallery</small>
+        <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Our Gallery</small>
         <h1 class="display-5 mb-5">Our Social & Professional Events Gallery</h1>
     </div>
     <div class="flex flex-col md:grid md:grid-cols-3 gap-3 p-5">
@@ -874,7 +829,7 @@
     <div class="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 menu bg-gray-100 pt-10 pd-1 my-6">
         <div class="container mx-auto sm:px-4">
             <div class="text-center wow bounceInDown" data-wow-delay="0.1s">
-                {% comment %} <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Values</small> {% endcomment %}
+                {% comment %} <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Values</small> {% endcomment %}
                 <h1 class="display-5 mb-5">Our Values</h1>
             </div>
             <div class="tab-class text-center">
@@ -1163,7 +1118,7 @@
     <div class="container mx-auto sm:px-4 max-w-full mx-auto sm:px-4 blog py-6">
         <div class="container mx-auto sm:px-4">
             <div class="text-center wow bounceInDown" data-wow-delay="0.1s">
-                {% comment %} <small class="inline-block fw-bold text-gray-900 uppercase orange_border py-2 px-4 px-4 py-1 mb-3" style="border-radius: 10px;">Our V/M</small> {% endcomment %}
+                {% comment %} <small class="inline-block fw-bold text-gray-900 uppercase bg-gray-100 border orange_border rounded-full py-2 px-4 px-4 py-1 mb-3">Our V/M</small> {% endcomment %}
             </div>
             <div class="flex flex-wrap  gx-4 justify-center">
                 <div class="md:w-1/2 pr-4 pl-4 lg:w-1/2 pr-4 pl-4 wow bounceInLeft" data-wow-delay="0.3s">
@@ -1218,6 +1173,38 @@ for: https://web3templates.com
 -->
 
 <div class="relative overflow-hidden">
+    <div class="bg-white pt-10 pb-14 sm:pt-16 lg:overflow-hidden lg:pt-24 lg:pb-24">
+      <div class="mx-auto max-w-5xl lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8">
+          <div class="mx-auto max-w-md px-4 text-center sm:max-w-2xl sm:px-6 lg:flex lg:items-center lg:px-0 lg:text-left">
+            <div class="lg:py-24">
+              <h1 class="mt-4 text-4xl font-bold tracking-tight text-black sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl"><span class="block text-pink-500">Introducing </span><span class="block text-black">Finalty Website</span></h1>
+              <p class="mt-3 text-base text-gray-400 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">We're excited to announce that something amazing is in the works. Our team is diligently working on bringing you a fantastic experience. Stay tuned for updates!</p>
+              <div class="mt-10 sm:mt-12">
+  
+                  <!-- This is a working waitlist form. Create your access key from https://web3forms.com/s to setup.  -->
+                <form class="sm:mx-auto sm:max-w-xl lg:mx-0" action="https://api.web3forms.com/submit">
+                  <div class="sm:flex">
+                    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEy_HERE">
+                    <input type="hidden" name="subject" value="New Waitlist">
+                    <div class="min-w-0 flex-1">
+                        {% comment %} <label for="email" class="sr-only">Email address</label><input id="email" type="email" placeholder="Enter your email" class="block w-full rounded-md border-0 bg-gray-200 px-4 py-3 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-400" value="" autocomplete="off" /> {% endcomment %}
+                    </div>
+                    <div class="mt-3 sm:mt-0 sm:ml-3" id="contact">
+                        {% comment %} <button type="submit" class="block w-full rounded-md bg-pink-500 py-3 px-4 font-medium text-white shadow hover:bg-pink-400 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-offset-2 focus:ring-offset-gray-900">Join Waitlist</button> {% endcomment %}
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="mt-12 hidden lg:block"><img class="" src="https://cdni.iconscout.com/illustration/premium/thumb/real-estate-agency-3142089-2621418.png" alt="" /></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+
     <!-- component contact us -->
     <div class="relative flex items-top justify-center p-6 shadow-sm rounded-md transition duration-20 orange_background dark:bg-gray-900 sm:items-center sm:pt-0">
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8" data-wow-delay="0.5s">
