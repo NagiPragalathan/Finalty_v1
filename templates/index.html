@@ -1418,6 +1418,36 @@ for: https://web3templates.com
         new WOW().init();
     </script>
     <script>
+        // Check if history.scrollRestoration is supported
+        if ('scrollRestoration' in history) {
+            // Disable automatic scroll restoration
+            history.scrollRestoration = 'manual';
+        }
+
+        // Listen for the scroll event
+        window.addEventListener('scroll', function () {
+            // Store the current scroll position in sessionStorage
+            sessionStorage.setItem('scrollPosition', window.scrollY);
+        });
+        var ab, os, kp, cu;
+        window.onload = function() {
+            // Scroll to the top of the page with a delay
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        
+            // Use requestAnimationFrame to wait for the next frame
+            window.requestAnimationFrame(function() {
+                // Initial positions after the scrolling animation completes
+                ab = document.getElementById("titles").getBoundingClientRect().top;
+                os = document.getElementById("Our_Services").getBoundingClientRect().top;
+                kp = document.getElementById("scroll_kp").getBoundingClientRect().top;
+                cu = document.getElementById("scroll_contact").getBoundingClientRect().top;
+        
+                console.log("Initial Positions: ", ab, os, kp, cu);
+            });
+        };
         document.addEventListener('DOMContentLoaded', function () {
           var About = document.getElementById('about_');
           var Peoples = document.getElementById('peoples_');
@@ -1425,10 +1455,6 @@ for: https://web3templates.com
           var service = document.getElementById('service_');
           var Home = document.getElementById('home_');
 
-          var ab = document.getElementById("titles").getBoundingClientRect().top;
-          var os = document.getElementById("Our_Services").getBoundingClientRect().top;
-          var kp = document.getElementById("scroll_kp").getBoundingClientRect().top;
-          var cu = document.getElementById("scroll_contact").getBoundingClientRect().top;
           // Update color on scroll
           window.addEventListener('scroll', function () {
               var scrollPosition = window.scrollY;
