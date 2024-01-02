@@ -57,8 +57,8 @@ mail
 seo
 
 
-Finalty@123
-
+Finalty@123 = hostinger mail
+finalty@123 = github
 
 
 git
