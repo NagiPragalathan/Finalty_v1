@@ -8,3 +8,5 @@ requests
 djangorestframework 
 djangorestframework-jwt
 djangorestframework-simplejwt
+django-meta 
+django-robots-txt

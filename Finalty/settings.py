@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-od+82(4(e(i7t$9iwe%l(v^^t@xwfr!-28u73)sa0c(o+m(bf="
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app', '.now.sh','*']
 
@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'base'
+    'base',
+    'meta',
+    'robots_txt',
 ]   
 
 MIDDLEWARE = [
@@ -70,6 +72,18 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "Finalty.wsgi.application"
 
+
+DATABASES = {
+   'default': {
+       'ENGINE': 'djongo',
+       'CLIENT': {
+           
+           'host': "mongodb+srv://finaltyfintech:nagi@cluster0.vulge49.mongodb.net/?retryWrites=true&w=majority",
+           'name':'finaltyfintech',
+           'authMechanism': "SCRAM-SHA-1",
+        }
+   }
+}
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases

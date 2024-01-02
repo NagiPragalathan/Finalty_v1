@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+    <!-- Include your CSS stylesheets or frameworks here for styling -->
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+<style>
+    /* Reset some default browser styles */
+body, h1, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Container for filter options */
+div {
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Filter input style */
+input, select {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Table style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin: 20px;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+    div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    input, select {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+}
+</style>
+<body>
+    <h1>Contact List</h1>
+
+    <!-- Filter Options -->
+    <div>
+        <label for="filterByName">Filter by Name:</label>
+        <input type="text" id="filterByName" oninput="filterData()" />
+
+        <!-- Date Range Filters -->
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" onchange="filterData()" />
+
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" onchange="filterData()" />
+    </div>
+
+    <!-- Data Table -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email Address</th>
+                <th>Message</th>
+                <th>Updated Time</th>
+                <!-- Add more table headers based on your data model -->
+            </tr>
+        </thead>
+        <tbody id="dataList">
+            <!-- Data rows will be inserted here -->
+            {% for contact in contact_data %}
+                <tr>
+                    <td>{{ contact.name }}</td>
+                    <td>{{ contact.mail_address }}</td>
+                    <td>{{ contact.message }}</td>
+                    <td>{{ contact.updated_time|date:'Y-m-d' }}</td>
+                    <!-- Add more table data based on your data model -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <script>
+        // Fetch data from the Django view
+        const contactData = [
+            {% for contact in contact_data %}
+                { name: '{{ contact.name }}', mail_address: '{{ contact.mail_address }}', message: '{{ contact.message }}', updated_time: '{{ contact.updated_time|date:"Y-m-d" }}' },
+            {% endfor %}
+        ];
+
+        // Function to populate the table and apply filters
+        function filterData() {
+            const filterByName = document.getElementById('filterByName').value.toLowerCase();
+            const startDate = document.getElementById('startDate').value;
+            const endDate = document.getElementById('endDate').value;
+
+            const filteredData = contactData.filter(contact =>
+                contact.name.toLowerCase().includes(filterByName) &&
+                (startDate === '' || contact.updated_time >= startDate) &&
+                (endDate === '' || contact.updated_time <= endDate)
+                // Add other filter conditions as needed
+            );
+
+            // Update the table with filtered data
+            const dataList = document.getElementById('dataList');
+            dataList.innerHTML = '';
+
+            filteredData.forEach(contact => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${contact.name}</td>
+                    <td>${contact.mail_address}</td>
+                    <td>${contact.message}</td>
+                    <td>${contact.updated_time}</td>
+                    <!-- Add more table data based on your data model -->
+                `;
+                dataList.appendChild(row);
+            });
+        }
+
+        // Initial data population
+        filterData();
+    </script>
+</body>
+
+</html>
