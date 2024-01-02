@@ -78,7 +78,7 @@ DATABASES = {
        'ENGINE': 'djongo',
        'CLIENT': {
            
-           'host': "mongodb+srv://nagi:nagi@cluster0.ohv5gsc.mongodb.net/finaltyfintech",
+           'host': "mongodb+srv://finaltyfintech:nagi@cluster0.vulge49.mongodb.net/?retryWrites=true&w=majority",
            'name':'finaltyfintech',
            'authMechanism': "SCRAM-SHA-1",
         }
