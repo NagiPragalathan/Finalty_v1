@@ -99,7 +99,6 @@
                     <td>{{ contact.message }}</td>
                     <td>{{ contact.updated_time|date:'Y-m-d H:i:s' }}</td>
                     <td>
-                        <button onclick="addContact('{{ contact.name }}', '{{ contact.mail_address }}', '{{ contact.message }}')">Add Contact</button>
                         <span class="delete-button" onclick="deleteContact('{{ contact.mail_address }}','{{ contact.id }}')">Delete</span>
                     </td>
                     <!-- Add more table data based on your data model -->
