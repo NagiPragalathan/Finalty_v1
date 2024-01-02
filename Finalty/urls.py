@@ -34,6 +34,7 @@ urlpatterns = [
     path("underdev",underdev,name="underdev"),
     path("home",Home,name="home"),
     path("list_out",list_out,name="list_out"),
+    path("delete_contact",delete_contact,name="delete_contact"),
     path("",Home,name="home"),
     path("underdev",underdev,name="underdev"),
     path("contact_form",contact_form,name="contact_form"),
