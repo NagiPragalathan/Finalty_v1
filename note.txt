@@ -64,3 +64,7 @@ finalty@123 = github
 git
 doc
 seo
+
+
+login
+docs
