@@ -1454,53 +1454,63 @@ for: https://web3templates.com
           var Contact = document.getElementById('Contact_');
           var service = document.getElementById('service_');
           var Home = document.getElementById('home_');
+          // 1040
 
           // Update color on scroll
           window.addEventListener('scroll', function () {
               var scrollPosition = window.scrollY;
-              console.log(ab,os,kp,cu,"sample",scrollPosition)
-              
-            // You can adjust these values based on when you want the color to change
-            if (scrollPosition > 0 && scrollPosition < (ab-100)) {
-                console.log("home")
-                Home.style.color = "#FC4C01"
-                About.style.color = "black"
+              var size =  window.innerWidth
+              console.log(ab,os,kp,cu,"sample",scrollPosition, size)
+            if(size>1040){
+
+                // You can adjust these values based on when you want the color to change
+                if (scrollPosition > 0 && scrollPosition < (ab-500)) {
+                    console.log("home")
+                    Home.style.color = "#FC4C01"
+                    About.style.color = "black"
+                    Contact.style.color = "black"
+                    Peoples.style.color = "black"
+                    service.style.color = "black"
+                }
+                else if (scrollPosition > (ab-500) && scrollPosition < (os-200)) {
+                    console.log("about")
+                    About.style.color = "#FC4C01"
+                    Home.style.color = "black"
+                    Contact.style.color = "black"
+                    Peoples.style.color = "black"
+                    service.style.color = "black"
+                }
+                else if (scrollPosition > (os-200) && scrollPosition < (kp-600)) {
+                    console.log("service")
+                    service.style.color = "#FC4C01"
+                    Home.style.color = "black"
+                    Contact.style.color = "black"
+                    Peoples.style.color = "black"
+                    About.style.color = "black"
+                }
+                else if (scrollPosition > (kp-600) && scrollPosition < (cu-600)) {
+                    console.log("peoples")
+                    Peoples.style.color = "#FC4C01"
+                    Home.style.color = "black"
+                    Contact.style.color = "black"
+                    service.style.color = "black"
+                    About.style.color = "black"
+                }else if(scrollPosition > (cu-500)){
+                    console.log("peoples")
+                    Contact.style.color = "#FC4C01"
+                    Home.style.color = "black"
+                    Peoples.style.color = "black" 
+                    service.style.color = "black"
+                    About.style.color = "black"
+                }
+                
+            }else{
                 Contact.style.color = "black"
+                Home.style.color = "black"
                 Peoples.style.color = "black"
                 service.style.color = "black"
-            }
-            else if (scrollPosition > (ab-100) && scrollPosition < (os-200)) {
-                console.log("about")
-                About.style.color = "#FC4C01"
-                Home.style.color = "black"
-                Contact.style.color = "black"
-                Peoples.style.color = "black"
-                service.style.color = "black"
-            }
-            else if (scrollPosition > (os-200) && scrollPosition < (kp-100)) {
-                console.log("service")
-                service.style.color = "#FC4C01"
-                Home.style.color = "black"
-                Contact.style.color = "black"
-                Peoples.style.color = "black"
                 About.style.color = "black"
             }
-            else if (scrollPosition > (kp-100) && scrollPosition < (cu-100)) {
-                console.log("peoples")
-                Peoples.style.color = "#FC4C01"
-                Home.style.color = "black"
-                Contact.style.color = "black"
-                service.style.color = "black"
-                About.style.color = "black"
-            }else if(scrollPosition > (cu-100)){
-                console.log("peoples")
-                Contact.style.color = "#FC4C01"
-                Home.style.color = "black"
-                Peoples.style.color = "black"
-                service.style.color = "black"
-                About.style.color = "black"
-            }
-            
             {% comment %} console.log(scrollPosition) {% endcomment %}
           });
         });
